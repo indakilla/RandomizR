@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maximum</string>
+    <string name="spinNumberText">Generation №</string>
+    <string name="GenerateBtn">GENERATE:</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Random number:</string>
+    <string name="menu_generate">Random Number</string>
+    <string name="menu_second">Random Dice</string>
+    <string name="menu_third">Random List</string>
+    <string name="menu_four">Random Answer</string>
+    <string name="YES">Yes?</string>
+    <string name="NO">No?</string>
+    <string name="backBtn">Back</string>
+    <string name="add_name">Enter new name</string>
+    <string name="addNameBtn">ADD TO LIST</string>
+    <string name="randomNameHint">Random name</string>
+    <string name="clearList">Clear List</string>
+    <string name="minAlert">Minimum limit is not set</string>
+    <string name="maxAlert">Maximum limit is not set</string>
+    <string name="maxNotMoreThanMin">Please set the maximum value to be more than the minimum</string>
+    <string name="diceScore">Your score is:</string>
+    <string name="emptyFieldAlert">Input field is empty</string>
+    <string name="emptyListAlert">List is empty</string>
+
+</resources>
