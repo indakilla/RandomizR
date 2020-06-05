@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class RandomNumbersActivity extends AppCompatActivity {
+public class RandomNumbersActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText minimum_number, maximum_number;
     private Button generateBtn;

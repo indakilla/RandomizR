@@ -5,10 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <meta-data
-        android:name="com.google.android.gms.ads.APPLICATION_ID"
-        android:value="ca-app-pub-7898563371986745~3745274327" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

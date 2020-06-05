@@ -39,25 +39,42 @@ public class RandomAnswerActivity extends AppCompatActivity {
         yestext.setText(name1);
         notext.setText(name2);
 
-        generateBtn.setOnClickListener(RandomAnswerActivity.this);
-        backBtn.setOnClickListener(RandomAnswerActivity.this);
+        generateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.generateBtn:
+                        countGenerations++;
+                        countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
+                        generationCount.setText(countOutput);
+                        show_result();
+                        break;
+                    case R.id.backBtn:
+                        go_to_main();
+                        break;
+                }
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.generateBtn:
+                        countGenerations++;
+                        countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
+                        generationCount.setText(countOutput);
+                        show_result();
+                        break;
+                    case R.id.backBtn:
+                        go_to_main();
+                        break;
+                }
+            }
+        });
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.generateBtn:
-                countGenerations++;
-                countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
-                generationCount.setText(countOutput);
-                show_result();
-                break;
-            case R.id.backBtn:
-                go_to_main();
-                break;
-        }
-    }
 
     public void show_result() {
         outputRandom = (TextView) findViewById(R.id.outputRandom);
