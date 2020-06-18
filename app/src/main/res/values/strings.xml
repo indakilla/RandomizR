@@ -25,5 +25,8 @@
     <string name="diceScore">Your score is:</string>
     <string name="emptyFieldAlert">Input field is empty</string>
     <string name="emptyListAlert">List is empty</string>
+    <string name="start">Start</string>
+
+    <string name="option">Option %1$s</string>
 
 </resources>

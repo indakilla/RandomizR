@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RandomUsersActivity"></activity>
+        <activity android:name=".RandomStartedSpinActivity"></activity>
+        <activity android:name=".RandomSpinActivity" />
+        <activity android:name=".RandomUsersActivity" />
         <activity android:name=".RandomDiceActivity" />
         <activity android:name=".RandomAnswerActivity" />
         <activity android:name=".RandomNumbersActivity" />
@@ -23,6 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7898563371986745~3745274327" />
     </application>
 
 </manifest>

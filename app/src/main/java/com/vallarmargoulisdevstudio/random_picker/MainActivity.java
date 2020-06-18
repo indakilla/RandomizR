@@ -17,24 +17,24 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button random_number, random_dice, random_users, random_answer;
+    private Button random_number, random_dice, random_users, random_answer, random_spin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-        AdView adView = new AdView(this);
-        adView.setAdSize(AdSize.SMART_BANNER);
-        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+//        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+//            @Override
+//            public void onInitializationComplete(InitializationStatus initializationStatus) {
+//            }
+//        });
+//
+//        AdView adView = new AdView(this);
+//        adView.setAdSize(AdSize.SMART_BANNER);
+//        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        adView.loadAd(adRequest);
 
         random_number = (Button) findViewById(R.id.btn1);
         random_number.setOnClickListener(new View.OnClickListener() {
@@ -67,10 +67,20 @@ public class MainActivity extends AppCompatActivity {
                 openRandomAnswers();
             }
         });
+
+        random_spin = (Button) findViewById(R.id.btn5);
+        random_spin.setOnClickListener( v -> {
+            openRandomSpin();
+        });
     }
 
     public void openRandomNumberGenerator(){
         Intent intent = new Intent(this, RandomNumbersActivity.class);
+        startActivity(intent);
+    }
+
+    public void openRandomSpin(){
+        Intent intent = new Intent(this, RandomSpinActivity.class);
         startActivity(intent);
     }
 
