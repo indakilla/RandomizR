@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">最小</string>
+    <string name="maximum">最大</string>
+    <string name="spinNumberText">ジェネレーション№</string>
+    <string name="GenerateBtn">生む</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">乱数：</string>
+    <string name="menu_generate">乱数</string>
+    <string name="menu_second">ランダムデータ</string>
+    <string name="menu_third">ランダムリスト</string>
+    <string name="menu_four">ランダム決定</string>
+    <string name="menu_fifth">運命の輪</string>
+    <string name="YES">はい</string>
+    <string name="NO">番号</string>
+    <string name="add_name">新しい名前を入力してください</string>
+    <string name="addNameBtn">リストに追加されました</string>
+    <string name="randomNameHint">ランダムな名前</string>
+    <string name="clearList">明確なリスト</string>
+    <string name="minAlert">下限が定義されていません</string>
+    <string name="maxAlert">上限は定義されていません</string>
+    <string name="maxNotMoreThanMin">最大値を最小値より大きく設定します</string>
+    <string name="diceScore">その数は次のとおりです。</string>
+    <string name="emptyFieldAlert">入力フィールドが空です</string>
+    <string name="emptyListAlert">リストは空です</string>
+    <string name="start">ホイールを回す</string>
+    <string name="option">値を入力してください %1$s</string>
+
+</resources>

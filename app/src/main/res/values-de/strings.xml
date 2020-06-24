@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maximal</string>
+    <string name="spinNumberText">Runden №</string>
+    <string name="GenerateBtn">GENERIEREN</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Zufallszahl:</string>
+    <string name="menu_generate">Zufallszahl</string>
+    <string name="menu_second">Zufällige Würfel</string>
+    <string name="menu_third">Zufällige Liste</string>
+    <string name="menu_four">Zufällige Entscheidung</string>
+    <string name="menu_fifth">Zufälliger Spin</string>
+    <string name="YES">Ja</string>
+    <string name="NO">Nein</string>
+    <string name="add_name">Geben Sie einen neuen Namen ein</string>
+    <string name="addNameBtn">ZUR LISTE HINZUFÜGEN</string>
+    <string name="randomNameHint">Zufälliger Name</string>
+    <string name="clearList">Liste leeren</string>
+    <string name="minAlert">Mindestgrenze ist nicht festgelegt</string>
+    <string name="maxAlert">Höchstgrenze ist nicht festgelegt</string>
+    <string name="maxNotMoreThanMin">Bitte stellen Sie den Maximalwert so ein, dass er über dem Minimum liegt</string>
+    <string name="diceScore">Ihre Nummer ist:</string>
+    <string name="emptyFieldAlert">Das Eingabefeld ist leer</string>
+    <string name="emptyListAlert">Liste ist leer</string>
+    <string name="start">DREHE DAS RAD</string>
+    <string name="option">Fügen Sie den Wert ein %1$s</string>
+
+</resources>

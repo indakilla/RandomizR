@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Мінімум</string>
+    <string name="maximum">Максімум</string>
+    <string name="spinNumberText">Генерацыя №</string>
+    <string name="GenerateBtn">Згенераваць</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Выпадковае лік:</string>
+    <string name="menu_generate">Выпадковае лік</string>
+    <string name="menu_second">Выпадковыя косці</string>
+    <string name="menu_third">Выпадковы спіс</string>
+    <string name="menu_four">Выпадковы адказ</string>
+    <string name="menu_fifth">Выпадковы спін</string>
+    <string name="YES">Так</string>
+    <string name="NO">Не</string>
+    <string name="add_name">Увядзіце новае імя</string>
+    <string name="addNameBtn">ДАДАЦЬ У СПІС</string>
+    <string name="randomNameHint">Выпадковае імя</string>
+    <string name="clearList">Ачысціць спіс</string>
+    <string name="minAlert">Мінімальны ліміт не ўстаноўлены</string>
+    <string name="maxAlert">Максімальны ліміт не ўстаноўлены</string>
+    <string name="maxNotMoreThanMin">Калі ласка, усталюйце максімальнае значэнне, якое будзе больш за мінімальнае</string>
+    <string name="diceScore">Ваш нумар ёсць:</string>
+    <string name="emptyFieldAlert">Поле ўводу пуста</string>
+    <string name="emptyListAlert">Спіс пусты</string>
+    <string name="start">Закруціце кола</string>
+    <string name="option">Варыянт %1$s</string>
+
+</resources>

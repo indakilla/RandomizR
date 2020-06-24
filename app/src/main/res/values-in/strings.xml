@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Terendah</string>
+    <string name="maximum">Maksimum</string>
+    <string name="spinNumberText">Generasi №</string>
+    <string name="GenerateBtn">MENGHASILKAN</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Angka acak:</string>
+    <string name="menu_generate">Angka acak</string>
+    <string name="menu_second">Data Acak</string>
+    <string name="menu_third">Daftar acak</string>
+    <string name="menu_four">Keputusan acak</string>
+    <string name="menu_fifth">Roda keberuntungan</string>
+    <string name="YES">Iya</string>
+    <string name="NO">Tidak</string>
+    <string name="add_name">Masukkan nama baru</string>
+    <string name="addNameBtn">TAMBAH DALAM DAFTAR</string>
+    <string name="randomNameHint">Nama acak</string>
+    <string name="clearList">Bersihkan daftar</string>
+    <string name="minAlert">Batas bawah tidak ditentukan</string>
+    <string name="maxAlert">Batas atas tidak ditentukan</string>
+    <string name="maxNotMoreThanMin">Tetapkan nilai maksimum menjadi lebih dari minimum</string>
+    <string name="diceScore">Jumlah mereka adalah:</string>
+    <string name="emptyFieldAlert">Kolom input kosong</string>
+    <string name="emptyListAlert">Daftarnya kosong</string>
+    <string name="start">PUTAR RODANYA</string>
+    <string name="option">Masukkan nilainya %1$s</string>
+
+</resources>

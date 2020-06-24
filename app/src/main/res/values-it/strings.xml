@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimo</string>
+    <string name="maximum">Massimo</string>
+    <string name="spinNumberText">Generazione №</string>
+    <string name="GenerateBtn">CREARE</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Numero casuale:</string>
+    <string name="menu_generate">Numero casuale</string>
+    <string name="menu_second">Dati casuali</string>
+    <string name="menu_third">Elenco casuale</string>
+    <string name="menu_four">Decisione casuale</string>
+    <string name="menu_fifth">Ruota della fortuna</string>
+    <string name="YES">Sì</string>
+    <string name="NO">No</string>
+    <string name="add_name">Inserisci il nuovo nome</string>
+    <string name="addNameBtn">AGGIUNTO ALLA LISTA</string>
+    <string name="randomNameHint">Nome casuale</string>
+    <string name="clearList">Elenco chiaro</string>
+    <string name="minAlert">Il limite inferiore non è definito</string>
+    <string name="maxAlert">Il limite superiore non è definito</string>
+    <string name="maxNotMoreThanMin">Impostare il valore massimo su un valore superiore al minimo</string>
+    <string name="diceScore">Il loro numero è:</string>
+    <string name="emptyFieldAlert">Il campo di input è vuoto</string>
+    <string name="emptyListAlert">L\'elenco è vuoto</string>
+    <string name="start">GIRA LA RUOTA</string>
+    <string name="option">Inserisci il valore %1$s</string>
+
+</resources>

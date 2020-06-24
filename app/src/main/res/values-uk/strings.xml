@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Мінімум</string>
+    <string name="maximum">Максимум</string>
+    <string name="spinNumberText">Генерація №</string>
+    <string name="GenerateBtn">Сгенерувати</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Випадкове число:</string>
+    <string name="menu_generate">Випадкове число</string>
+    <string name="menu_second">Гральні кубики</string>
+    <string name="menu_third">Випадковий список</string>
+    <string name="menu_four">Випадкове рішення</string>
+    <string name="menu_fifth">Колесо фортуни</string>
+    <string name="YES">Так</string>
+    <string name="NO">Ні</string>
+    <string name="add_name">Введіть значення</string>
+    <string name="addNameBtn">ДОДАТИ ДО СПИСКУ</string>
+    <string name="randomNameHint">Випадкове значення</string>
+    <string name="clearList">Видалити список</string>
+    <string name="minAlert">Мінімум не задано</string>
+    <string name="maxAlert">Максимум не задано</string>
+    <string name="maxNotMoreThanMin">Максимум має бути більшим ніж мінімум</string>
+    <string name="diceScore">Ваше значення:</string>
+    <string name="emptyFieldAlert">Не задано значень у полі</string>
+    <string name="emptyListAlert">Список не має значень для вибору</string>
+    <string name="start">Крутити колесо!</string>
+    <string name="option">Варіант для вибору %1$s</string>
+
+</resources>

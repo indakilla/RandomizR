@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Минимум</string>
+    <string name="maximum">Максимум</string>
+    <string name="spinNumberText">Генерация №</string>
+    <string name="GenerateBtn">Сгенерировать</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Случайное число:</string>
+    <string name="menu_generate">Случайное число</string>
+    <string name="menu_second">Игральные кости</string>
+    <string name="menu_third">Случайный список</string>
+    <string name="menu_four">Случайное решение</string>
+    <string name="menu_fifth">Колесо фортуны</string>
+    <string name="YES">Да</string>
+    <string name="NO">Нет</string>
+    <string name="add_name">Введите значение</string>
+    <string name="addNameBtn">ДОБАВИТЬ В СПИСОК</string>
+    <string name="randomNameHint">Случайное значение</string>
+    <string name="clearList">Очистить список</string>
+    <string name="minAlert">Минимум не задан</string>
+    <string name="maxAlert">Максимум не задан</string>
+    <string name="maxNotMoreThanMin">Максимум должен быть больше минимума</string>
+    <string name="diceScore">Ваше значение:</string>
+    <string name="emptyFieldAlert">Поле ввода пустое</string>
+    <string name="emptyListAlert">Список пуст</string>
+    <string name="start">КРУТИТЬ БАРАБАН!</string>
+    <string name="option">Вариант %1$s</string>
+
+</resources>
