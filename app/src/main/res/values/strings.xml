@@ -12,8 +12,8 @@
     <string name="menu_third">Random List</string>
     <string name="menu_four">Random Answer</string>
     <string name="menu_fifth">Random Spin</string>
-    <string name="YES">Yes?</string>
-    <string name="NO">No?</string>
+    <string name="YES">Yes</string>
+    <string name="NO">No</string>
     <string name="backBtn">Back</string>
     <string name="add_name">Enter new name</string>
     <string name="addNameBtn">ADD TO LIST</string>
@@ -26,7 +26,6 @@
     <string name="emptyFieldAlert">Input field is empty</string>
     <string name="emptyListAlert">List is empty</string>
     <string name="start">Start</string>
-
     <string name="option">Option %1$s</string>
 
 </resources>

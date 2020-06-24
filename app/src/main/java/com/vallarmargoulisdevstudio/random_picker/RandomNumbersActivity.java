@@ -12,6 +12,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.util.Random;
 
 public class RandomNumbersActivity extends AppCompatActivity implements View.OnClickListener {
@@ -23,11 +30,26 @@ public class RandomNumbersActivity extends AppCompatActivity implements View.OnC
     public static final Random random_set = new Random();
     private String editTextValueMax, editTextValueMin, countOutput;
     private int countGenerations;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_numbers);
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.SMART_BANNER);
+        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
+
         countGenerations = 0;
 
         generationCount = (TextView) findViewById(R.id.generationCount);
@@ -39,37 +61,8 @@ public class RandomNumbersActivity extends AppCompatActivity implements View.OnC
         maximum_number.setFilters( new InputFilter[]{ new MinMaxFilter( "1" , "999999999" )}) ;
 
         generateBtn = (Button) findViewById(R.id.generateBtn);
-        backBtn = (Button) findViewById(R.id.backBtn);
-
         generateBtn.setOnClickListener(RandomNumbersActivity.this);
-        backBtn.setOnClickListener(RandomNumbersActivity.this);
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.generateBtn:
-                String inputMin = minimum_number.getText().toString();
-                String inputMax = maximum_number.getText().toString();
-
-
-                if ((TextUtils.isEmpty(inputMin))) {
-                    minimum_number.setError(getResources().getString(R.string.minAlert));
-                    return;
-                } else if ((TextUtils.isEmpty(inputMax))){
-                    maximum_number.setError(getResources().getString(R.string.maxAlert));
-                    return;
-                } else {
-                    countGenerations++;
-                    countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
-                    generationCount.setText(countOutput);
-                    show_result();
-                    break;}
-            case R.id.backBtn:
-                go_to_main();
-                break;
         }
-    }
 
     public void show_result() {
         int min = Integer.parseInt(minimum_number.getText().toString());
@@ -96,6 +89,28 @@ public class RandomNumbersActivity extends AppCompatActivity implements View.OnC
     public void restart() {
         Intent intent = new Intent(this, RandomNumbersActivity.class);
         startActivity(intent);
+    }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.generateBtn:
+                String inputMin = minimum_number.getText().toString();
+                String inputMax = maximum_number.getText().toString();
+
+
+                if ((TextUtils.isEmpty(inputMin))) {
+                    minimum_number.setError(getResources().getString(R.string.minAlert));
+                    return;
+                } else if ((TextUtils.isEmpty(inputMax))){
+                    maximum_number.setError(getResources().getString(R.string.maxAlert));
+                    return;
+                } else {
+                    countGenerations++;
+                    countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
+                    generationCount.setText(countOutput);
+                    show_result();
+                    break;}
+        };
     }
 }

@@ -8,27 +8,45 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.util.Random;
 
 public class RandomAnswerActivity extends AppCompatActivity {
 
     private Button generateBtn;
-    private Button backBtn;
     private TextView generationCount, outputRandom, yestext, notext;
     private String countOutput;
     public static final Random random_set = new Random();
     private int countGenerations, sum;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_answer);
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.SMART_BANNER);
+        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         countGenerations = 0;
         generationCount = (TextView) findViewById(R.id.generationCount);
 
         generateBtn = (Button) findViewById(R.id.generateBtn);
-        backBtn = (Button) findViewById(R.id.backBtn);
 
         yestext = (TextView) findViewById(R.id.YesText);
         notext = (TextView) findViewById(R.id.NoText);
@@ -48,26 +66,6 @@ public class RandomAnswerActivity extends AppCompatActivity {
                         countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
                         generationCount.setText(countOutput);
                         show_result();
-                        break;
-                    case R.id.backBtn:
-                        go_to_main();
-                        break;
-                }
-            }
-        });
-
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (v.getId()) {
-                    case R.id.generateBtn:
-                        countGenerations++;
-                        countOutput = getResources().getString(R.string.spinNumberText)+" "+ countGenerations;
-                        generationCount.setText(countOutput);
-                        show_result();
-                        break;
-                    case R.id.backBtn:
-                        go_to_main();
                         break;
                 }
             }

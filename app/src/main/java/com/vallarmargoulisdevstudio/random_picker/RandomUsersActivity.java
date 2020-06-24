@@ -12,6 +12,13 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -22,13 +29,32 @@ public class RandomUsersActivity extends AppCompatActivity {
     private ArrayList<String> arrayList, arrayShuffled;
     private ArrayAdapter<String> adapter;
     private EditText enterName;
-    private TextView randomNameDisplay;
-    private Button addNameBtn, generateUsernameBtn, backButton, clearListBtn;
+    private int numbersCount;
+    private TextView randomNameDisplay, GenerationCount;
+    private Button addNameBtn, generateUsernameBtn;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_users);
+
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.SMART_BANNER);
+        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
+        numbersCount = 0;
+        GenerationCount = (TextView) findViewById(R.id.generationCount);
+
         //setting the list and arrays
         ListView listView = (ListView) findViewById(R.id.listViewObject);
         String[] items = {};
@@ -80,26 +106,13 @@ public class RandomUsersActivity extends AppCompatActivity {
                     String random_string = arrayShuffled.get(1);
                     int random_int = Integer.parseInt(random_string);
                     String array_size_txt = arrayList.get(random_int);
-                    randomNameDisplay.setText(array_size_txt); }
+                    randomNameDisplay.setText(array_size_txt);
+
+                    numbersCount++;
+                    GenerationCount.setText(""+numbersCount);
+                }
             }
         });
-
-        backButton = (Button) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                go_home();;
-            }
-        });
-
-        clearListBtn = (Button) findViewById(R.id.clearListBtn);
-        clearListBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                restart_clear_list();
-            }
-        });
-
     }
 
     public void go_home () {

@@ -10,23 +10,42 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.util.Random;
 
 public class RandomDiceActivity extends AppCompatActivity {
 
     private Button diceBtn;
-    private Button backBtn;
     private TextView rollCount;
     private int countRolls;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_dice);
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.SMART_BANNER);
+        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
         int countRolls = 1;
 
         diceBtn = (Button) findViewById(R.id.diceBtn);
-        backBtn = (Button) findViewById(R.id.backBtn);
         rollCount = (TextView) findViewById(R.id.rollCount);
 
         final ImageView dice1 = (ImageView) findViewById(R.id.dice1);
@@ -54,13 +73,6 @@ public class RandomDiceActivity extends AppCompatActivity {
                 int sum = dice_number1 + dice_number2 + 2;
                 Toast.makeText(RandomDiceActivity.this, getResources().getString(R.string.diceScore)+" " + sum, Toast.LENGTH_SHORT).show();
                 add_counter();
-            }
-        });
-
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                go_to_main();
             }
         });
 

@@ -1,18 +1,23 @@
 package com.vallarmargoulisdevstudio.random_picker;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.jaredrummler.android.colorpicker.ColorPickerDialog;
 import com.jaredrummler.android.colorpicker.ColorPickerDialogListener;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 
 public class RandomSpinActivity extends AppCompatActivity implements ColorPickerDialogListener {
@@ -20,7 +25,7 @@ public class RandomSpinActivity extends AppCompatActivity implements ColorPicker
     private ArrayList<Integer> colors = new ArrayList<>();
     private EditText option1, option2, option3, option4, option5;
     private View color1, color2, color3, color4, color5;
-
+    private AdView mAdView;
     private int changedPositionView = 0;
 
     @Override
@@ -28,7 +33,17 @@ public class RandomSpinActivity extends AppCompatActivity implements ColorPicker
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_spin);
 
-
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.SMART_BANNER);
+        adView.setAdUnitId("ca-app-pub-7898563371986745/6670548113");
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         option1 = findViewById(R.id.edOption1);
