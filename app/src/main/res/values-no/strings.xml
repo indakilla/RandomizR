@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maksimum</string>
+    <string name="spinNumberText">Generasjonsnr.</string>
+    <string name="GenerateBtn">Generere</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Tilfeldig nummer:</string>
+    <string name="menu_generate">Tilfeldig nummer</string>
+    <string name="menu_second">Terning</string>
+    <string name="menu_third">Tilfeldig liste</string>
+    <string name="menu_four">Tilfeldig avgjørelse</string>
+    <string name="menu_fifth">Lykkehjul</string>
+    <string name="YES">Ja</string>
+    <string name="NO">Ikke</string>
+    <string name="add_name">Angi verdi</string>
+    <string name="addNameBtn">LEGG TIL LISTE</string>
+    <string name="randomNameHint">Tilfeldig verdi</string>
+    <string name="clearList">Tøm listen</string>
+    <string name="minAlert">Minimum ikke satt</string>
+    <string name="maxAlert">Maksimum ikke satt</string>
+    <string name="maxNotMoreThanMin">Maksimum må være større enn minimum</string>
+    <string name="diceScore">Verdien din:</string>
+    <string name="emptyFieldAlert">Inntastingsfeltet er tomt</string>
+    <string name="emptyListAlert">Listen er tom</string>
+    <string name="start">SPINN TRUM!</string>
+    <string name="option">Alternativ %1$s</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">最低要求</string>
+    <string name="maximum">最大值</string>
+    <string name="spinNumberText">代号</string>
+    <string name="GenerateBtn">生成</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">随机数:</string>
+    <string name="menu_generate">随机数</string>
+    <string name="menu_second">骰子</string>
+    <string name="menu_third">随机清单</string>
+    <string name="menu_four">随机决定</string>
+    <string name="menu_fifth">命运之轮</string>
+    <string name="YES">是</string>
+    <string name="NO">不</string>
+    <string name="add_name">输入值</string>
+    <string name="addNameBtn">加入清单</string>
+    <string name="randomNameHint">随机值</string>
+    <string name="clearList">清除清单</string>
+    <string name="minAlert">最低未设置</string>
+    <string name="maxAlert">未设定最大值</string>
+    <string name="maxNotMoreThanMin">最大值必须大于最小值</string>
+    <string name="diceScore">您的价值:</string>
+    <string name="emptyFieldAlert">输入字段为空</string>
+    <string name="emptyListAlert">列表为空</string>
+    <string name="start">旋转鼓!</string>
+    <string name="option">选项 %1$s</string>
+
+</resources>

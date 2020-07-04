@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maksimum</string>
+    <string name="spinNumberText">Nesil №</string>
+    <string name="GenerateBtn">Üretmek</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Rastgele sayı:</string>
+    <string name="menu_generate">Rastgele sayı</string>
+    <string name="menu_second">Zar</string>
+    <string name="menu_third">Rastgele liste</string>
+    <string name="menu_four">Rastgele karar</string>
+    <string name="menu_fifth">Çarkıfelek</string>
+    <string name="YES">Evet</string>
+    <string name="NO">Değil</string>
+    <string name="add_name">Değer girin</string>
+    <string name="addNameBtn">LİSTEYE EKLE</string>
+    <string name="randomNameHint">Rastgele değer</string>
+    <string name="clearList">Listeyi temizle</string>
+    <string name="minAlert">Minimum ayarlanmadı</string>
+    <string name="maxAlert">Maksimum ayarlanmadı</string>
+    <string name="maxNotMoreThanMin">Maksimum, minimumdan büyük olmalıdır</string>
+    <string name="diceScore">Sizin değeriniz:</string>
+    <string name="emptyFieldAlert">Giriş alanı boş</string>
+    <string name="emptyListAlert">Liste boş</string>
+    <string name="start">DÖNÜŞ DRUMU!</string>
+    <string name="option">Seçenek %1$s</string>
+
+</resources>

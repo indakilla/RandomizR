@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minim</string>
+    <string name="maximum">Maxim</string>
+    <string name="spinNumberText">Nr. Generație</string>
+    <string name="GenerateBtn">Genera</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Număr aleatoriu:</string>
+    <string name="menu_generate">Număr aleatoriu</string>
+    <string name="menu_second">Zaruri</string>
+    <string name="menu_third">Lista aleatorie</string>
+    <string name="menu_four">Decizie aleatorie</string>
+    <string name="menu_fifth">Roata Norocului</string>
+    <string name="YES">Da</string>
+    <string name="NO">Nu</string>
+    <string name="add_name">Introduceți valoarea</string>
+    <string name="addNameBtn">ADAUGĂ LA LISTA</string>
+    <string name="randomNameHint">Valoarea aleatorie</string>
+    <string name="clearList">Sterge lista</string>
+    <string name="minAlert">Minim nu setat</string>
+    <string name="maxAlert">Maxim nu setat</string>
+    <string name="maxNotMoreThanMin">Maximul trebuie să fie mai mare decât minimul</string>
+    <string name="diceScore">Valoarea ta:</string>
+    <string name="emptyFieldAlert">Câmpul de intrare este gol</string>
+    <string name="emptyListAlert">Lista este goală</string>
+    <string name="start">SPIN DRUM!</string>
+    <string name="option">Opțiune %1$s</string>
+
+</resources>

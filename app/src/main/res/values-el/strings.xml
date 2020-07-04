@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Ελάχιστο</string>
+    <string name="maximum">Το μέγιστο</string>
+    <string name="spinNumberText">Αριθμός παραγωγής</string>
+    <string name="GenerateBtn">Παράγω</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Τυχαίος αριθμός:</string>
+    <string name="menu_generate">Τυχαίος αριθμός</string>
+    <string name="menu_second">Ζάρια</string>
+    <string name="menu_third">Τυχαία λίστα</string>
+    <string name="menu_four">Τυχαία απόφαση</string>
+    <string name="menu_fifth">Τροχός της Τύχης</string>
+    <string name="YES">Ναί</string>
+    <string name="NO">Δεν</string>
+    <string name="add_name">Εισαγάγετε την τιμή</string>
+    <string name="addNameBtn">ΠΡΟΣΘΗΚΗ ΣΤΗ ΛΙΣΤΑ</string>
+    <string name="randomNameHint">Τυχαία τιμή</string>
+    <string name="clearList">διαγράψτε τη λίστα</string>
+    <string name="minAlert">Ελάχιστο δεν έχει οριστεί</string>
+    <string name="maxAlert">Το μέγιστο δεν έχει οριστεί</string>
+    <string name="maxNotMoreThanMin">Το μέγιστο πρέπει να είναι μεγαλύτερο από το ελάχιστο</string>
+    <string name="diceScore">Η αξία σας:</string>
+    <string name="emptyFieldAlert">Το πεδίο εισαγωγής είναι κενό</string>
+    <string name="emptyListAlert">η λίστα είναι κενή</string>
+    <string name="start">Γυρίστε το τύμπανο!</string>
+    <string name="option">Επιλογή %1$s</string>
+
+</resources>

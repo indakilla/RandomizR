@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">최저한의</string>
+    <string name="maximum">최고</string>
+    <string name="spinNumberText">세대 번호</string>
+    <string name="GenerateBtn">일으키다</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">난수:</string>
+    <string name="menu_generate">난수</string>
+    <string name="menu_second">주사위</string>
+    <string name="menu_third">무작위 목록</string>
+    <string name="menu_four">무작위 결정</string>
+    <string name="menu_fifth">행운의 바퀴</string>
+    <string name="YES">예</string>
+    <string name="NO">아니</string>
+    <string name="add_name">값을 입력하십시오</string>
+    <string name="addNameBtn">리스트에 추가</string>
+    <string name="randomNameHint">임의의 값</string>
+    <string name="clearList">목록을 지우다</string>
+    <string name="minAlert">최소 미 설정</string>
+    <string name="maxAlert">설정되지 않은 최대 값</string>
+    <string name="maxNotMoreThanMin">최대 값은 최소값보다 커야합니다</string>
+    <string name="diceScore">당신의 가치:</string>
+    <string name="emptyFieldAlert">입력 필드가 비어 있습니다</string>
+    <string name="emptyListAlert">목록이 비어 있습니다</string>
+    <string name="start">스핀 드럼!</string>
+    <string name="option">선택권 %1$s</string>
+
+</resources>

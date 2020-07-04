@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimi</string>
+    <string name="maximum">Maksimi</string>
+    <string name="spinNumberText">Sukupolvenumero</string>
+    <string name="GenerateBtn">Tuottaa</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Satunnaisluku:</string>
+    <string name="menu_generate">Satunnaisluku</string>
+    <string name="menu_second">Noppa</string>
+    <string name="menu_third">Satunnainen luettelo</string>
+    <string name="menu_four">Satunnainen päätös</string>
+    <string name="menu_fifth">Onnenpyörä</string>
+    <string name="YES">Joo</string>
+    <string name="NO">Ei</string>
+    <string name="add_name">Syötä arvo</string>
+    <string name="addNameBtn">LISÄÄ LUETTELOON</string>
+    <string name="randomNameHint">Satunnainen arvo</string>
+    <string name="clearList">Tyhjennä luettelo</string>
+    <string name="minAlert">Minimiä ei ole asetettu</string>
+    <string name="maxAlert">Enimmäismäärää ei ole asetettu</string>
+    <string name="maxNotMoreThanMin">Enimmäismäärän on oltava vähintään minimi</string>
+    <string name="diceScore">Sinun arvo:</string>
+    <string name="emptyFieldAlert">Syöttökenttä on tyhjä</string>
+    <string name="emptyListAlert">Luettelo on tyhjä</string>
+    <string name="start">SPIN DRUM!</string>
+    <string name="option">Vaihtoehto %1$s</string>
+
+</resources>

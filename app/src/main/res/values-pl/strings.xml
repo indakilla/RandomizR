@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">RandomizR</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maksymalny</string>
+    <string name="spinNumberText">Generacja nr</string>
+    <string name="GenerateBtn">Generować</string>
+    <string name="minNumberHint" translatable="false">   1   </string>
+    <string name="maxNumberHint" translatable="false">999 999 999</string>
+    <string name="outputText">Liczba losowa:</string>
+    <string name="menu_generate">Liczba losowa</string>
+    <string name="menu_second">Kostka do gry</string>
+    <string name="menu_third">Losowa lista</string>
+    <string name="menu_four">Losowa decyzja</string>
+    <string name="menu_fifth">Koło fortuny</string>
+    <string name="YES">Tak</string>
+    <string name="NO">Nie</string>
+    <string name="add_name">Wpisz wartość</string>
+    <string name="addNameBtn">DODAJ DO LISTY</string>
+    <string name="randomNameHint">Wartość losowa</string>
+    <string name="clearList">Wyczyść listę</string>
+    <string name="minAlert">Nie ustawiono minimum</string>
+    <string name="maxAlert">Maksimum nie ustawione</string>
+    <string name="maxNotMoreThanMin">Maksimum musi być większe niż minimum</string>
+    <string name="diceScore">Twoja wartość:</string>
+    <string name="emptyFieldAlert">Pole wejściowe jest puste</string>
+    <string name="emptyListAlert">Lista jest pusta</string>
+    <string name="start">OBRÓĆ BĘBEN!</string>
+    <string name="option">Opcja %1$s</string>
+
+</resources>
